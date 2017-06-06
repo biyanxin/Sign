@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 角度 -->
+    <corners
+        android:topLeftRadius="0dip"
+        android:topRightRadius="0dip"
+        android:bottomLeftRadius="10dip"
+        android:bottomRightRadius="0dip" />
+
+    <!-- 填充色 -->
+    <solid android:color="#ffffff"/>
+    <!-- 描边 设置线宽及颜色 -->
+    <stroke android:color="#cccacb"
+        android:width="0dp"/>
+
+</shape>

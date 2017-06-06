@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wangli.signin.ZhuCeActivity"
+    android:background="@drawable/denglubackground">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="20dp"
+
+        android:background="@drawable/edit_topleft"
+        android:drawableRight="@drawable/denglu_mobile"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_toStartOf="@+id/editText_name" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_bottomleft"
+        android:drawableRight="@drawable/denglu_lock"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/editText_pwd"
+        android:layout_toStartOf="@+id/editText_pwd" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:id="@+id/editText_name"
+        android:hint="手机号"
+
+        android:paddingLeft="10dp"
+        android:background="@drawable/edit_topright"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/button_quedingzhuce"
+        android:layout_alignEnd="@+id/button_quedingzhuce" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:id="@+id/editText_pwd"
+        android:password="true"
+
+        android:background="@drawable/edit_bottomright"
+        android:hint="密码"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="确定注册"
+        android:background="@drawable/button"
+        android:onClick="Quedingzhuce"
+        android:id="@+id/button_quedingzhuce"
+        android:layout_marginTop="43dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="&lt; "
+        android:id="@+id/button_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#00000000"
+        android:textSize="25dp"
+        android:gravity="top|left"
+        android:textColor="#000000"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_toStartOf="@+id/editText_name" />
+
+</RelativeLayout>
